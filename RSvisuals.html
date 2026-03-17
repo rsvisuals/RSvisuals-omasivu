@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RSvisuals</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<div class="nav-container">
+<div class="logo">RSvisuals</div>
+<div class="hamburger">☰</div>
+<nav>
+<ul>
+<li><a href="index.html">Etusivu</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="palvelut.html">Palvelut</a></li>
+<li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>RSvisuals – Portfolio & palvelut</h1>
+<p>Valokuvausta yksityishenkilöille ja yrityksille.</p>
+<a href="portfolio.html" class="btn">Katso portfolio</a>
+<a href="yhteystiedot.html" class="btn">Ota yhteyttä</a>
+</div>
+</section>
+
+<footer>
+<p>© 2026 RSvisuals</p>
+</footer>
+
+<script src="script.js"></script>
+<script>Hamburger
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector("nav");
+
+hamburger.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
+
+// Lightbox
+function openLightbox(src){
+  document.getElementById("lightbox-img").src = src;
+  document.getElementById("lightbox").classList.add("active");
+}
+
+function closeLightbox(){
+  document.getElementById("lightbox").classList.remove("active");
+} </script>
+</body>
+</html>
